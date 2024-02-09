@@ -154,7 +154,7 @@ void WRITE(ATM *PHead)
 {
     int i;
     FILE *fp;
-    fp = fopen("d:\\ATM.txt","w+");
+    fp = fopen("d:\\data.txt","w+");
     if(fp == NULL)
     {
         printf(ANSI_COLOR_GREEN     "Problem with opening the file\n"    ANSI_COLOR_RESET);
@@ -172,7 +172,7 @@ void READ_FILE(ATM *PHead)
 {
     int i;
     FILE *fp = NULL;
-    fp = fopen("d:\\ATM.txt","r+");
+    fp = fopen("d:\\data.txt","r+");
     if(fp == NULL)
     {
         printf(ANSI_COLOR_GREEN     "Problem with opening the file\n"    ANSI_COLOR_RESET);
@@ -188,7 +188,7 @@ void READ_FILE(ATM *PHead)
 void PRINT_RECEIPT(ATM *PHead, int Customer_number)
 {
     FILE *fp = NULL;
-    fp = fopen("d:\\ATM.txt","r+");
+    fp = fopen("d:\\data.txt","r+");
     if (fp == NULL)
     {
         printf(ANSI_COLOR_GREEN     "Problem with opening the file"     ANSI_COLOR_RESET);

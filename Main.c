@@ -13,7 +13,7 @@ int main()
     char data_file[MAX_SIZE],transaction_file[MAX_SIZE], operation[20] = "last_10_transaction";
     int cmd1 = 0, cmd2 = 0, Customer_number = 0;
     FILE *fp = NULL;
-    strcpy(data_file, "d:\\ATM.txt");
+    strcpy(data_file, "d:\\data.txt");
     strcpy(transaction_file, "d:\\TRANSACTION.txt");
     fp = fopen(data_file,"r+");
     if(fp == NULL)
